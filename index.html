@@ -94,12 +94,12 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft [标题]</span><br></pre></td></tr></table></figure>
 </li>
 <li><h5 id="根据模板创建"><a href="#根据模板创建" class="headerlink" title="根据模板创建"></a>根据模板创建</h5><p>nexo的安装目录下存在名为scaffolds的文件夹，打开后发现默认存在三个模板draft.md，page.md，post.md，修改post.md。新生成的模板确实改变了。</p>
-<img src="/2019/20190111080938/2019/20190111080938/1547167696475.png" title="示例图片">
+
 </li>
 <li><h5 id="发布到git"><a href="#发布到git" class="headerlink" title="发布到git"></a>发布到git</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
 </li>
 <li><h5 id="上传图片解决方法"><a href="#上传图片解决方法" class="headerlink" title="上传图片解决方法"></a>上传图片解决方法</h5><p>把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>选项设置为<code>true</code>，重新执行创建文章，会自动生成一个和文章同名的文件夹存放资源。</p>
-<p>图片引用格式：<img src="/2019/20190111080938/2019/20190111080938/1547167696475.png" title="hexo的用法"></p>
+<p>图片引用格式：<code><img src="/2019/20190111080938/2019/20190111080938/1547167696475.png" title="hexo的用法"></code></p>
 </li>
 <li><h5 id="修改链接为自定义的方法"><a href="#修改链接为自定义的方法" class="headerlink" title="修改链接为自定义的方法"></a>修改链接为自定义的方法</h5><p>把主页配置文件<code>_config.yml</code> 里的<code>permalink</code>选项设置为<code>:year/:id/</code>，再修改post.md模板，新增一行id，每次生成后手动输入，permalink保持为空，上传到github之后就可以通过<code>:year/:id/</code>的格式进行访问了。</p>
 </li>
