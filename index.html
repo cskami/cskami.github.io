@@ -94,11 +94,17 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft [标题]</span><br></pre></td></tr></table></figure>
 </li>
 <li><h5 id="根据模板创建"><a href="#根据模板创建" class="headerlink" title="根据模板创建"></a>根据模板创建</h5><p>nexo的安装目录下存在名为scaffolds的文件夹，打开后发现默认存在三个模板draft.md，page.md，post.md，修改post.md。新生成的模板确实改变了。</p>
-<p><img src="assets/1547167696475.png" alt="1547167696475"></p>
+<p><img src="/2019/20190111080938/assets/1547167696475.png" alt=""></p>
+<p><img src="/2019/20190111080938/assets/1547167696475.png" alt="1547167696475"></p>
 </li>
 <li><h5 id="发布到git"><a href="#发布到git" class="headerlink" title="发布到git"></a>发布到git</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
 </li>
+<li><h5 id="上传图片解决方法"><a href="#上传图片解决方法" class="headerlink" title="上传图片解决方法"></a>上传图片解决方法</h5></li>
 </ul>
+<p>把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>选项设置为<code>true</code></p>
+<p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<p>然后就可以正常使用了</p>
 
       
     </div>
